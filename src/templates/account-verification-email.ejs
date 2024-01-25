@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Verification Email</title>
+  </head>
+  <body>
+    <h3>Hi <%= user?.first_name %> <%= user?.last_name %>,</h3>
+    <p>Welcome to the Authentication System</p>
+    <p>Please click on the below link to verify your account:</p>
+    <p>
+      <a href="<%= verificationURL %>" target="_blank"
+        ><%= verificationURL %></a
+      >
+    </p>
+    <p>If above link is not working then copy and paste into browser.</p>
+    <br />
+    <p>Thanks</p>
+    <p>Tech Team</p>
+  </body>
+</html>
